@@ -1,0 +1,9 @@
+{% if kws %}
+    <ul>
+    {% for kw in kws %}
+        <li>{{ kw.text }} @ {{kw.pub_date}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No key words are available.</p>
+{% endif %}
